@@ -35,7 +35,7 @@ This will create an execultable called `epiFitness`.
 
 ## How to run
 
-`epiFitness` takes only one argument - the filename of a parameter file. An example of a parameter file is available in this repo, `example_parameter.txt`. It consists of 14 lines, where each line must be the value for a specific parameter.
+`epiFitness` takes only one argument - the filename of a parameter file. An example of a parameter file is available in this repo, `example_parameter.txt`. This algorithm isn't necessarily designed to identify a global solution, moreover it explores the parameter space of the genotype-phenotype map. To this end genetic algorithms can be tuned and perturbed to deliver varying results, and so to access this flexibility the inputs have to be carefully chosen. The input file consists of 19 lines, where each line must be the value for a specific parameter, as listed in order below:
 
 
 ### Parameters
