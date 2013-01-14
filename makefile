@@ -4,7 +4,7 @@ LDFLAGS = -lm -Wall -O2
 FCC = gfortran
 SOURCES1 = main.c
 OBJECTS1 = $(SOURCES1:.c=.o)
-EXE1 = epiFitness
+EXE1 = epiSpaces
 
 all: $(SOURCES1) $(EXE1)
 

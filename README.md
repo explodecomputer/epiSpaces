@@ -1,11 +1,13 @@
-epiFitness
+epiSpaces
 ==========
 
-A genetic algorithm to find 2-locus epistatic patterns that maximise the maintenence of additive genetic variance under selection. This programme was used for analysis in the following article:
+A genetic algorithm to find 2-locus epistatic parameter space to maximise the maintenence of additive genetic variance under selection. This programme was used for analysis in the following article:
 
 *Hemani G, Knott S, Haley C.* **An evolutionary perspective on epistasis and the missing heritability**. *PLoS Genetics (in press)*.
 
-For detailed information on the background and interpretation of `epiFitness` programme please refer to this article.
+For detailed information on the background and interpretation of `epiSpaces` programme please refer to this article.
+
+(The name is sort of a pun-cum-portmanteau of *epistasis* and *parameter space*...)
 
 ## Summary
 
@@ -30,12 +32,12 @@ Requires GCC. To install (on Mac or Linux) simply clone the repo and run
 
     make
 
-This will create an execultable called `epiFitness`.
+This will create an execultable called `epiSpaces`.
 
 
 ## How to run
 
-`epiFitness` takes only one argument - the filename of a parameter file. An example of a parameter file is available in this repo, `example_parameter.txt`. This algorithm isn't necessarily designed to identify a global solution, moreover it explores the parameter space of the genotype-phenotype map. To this end genetic algorithms can be tuned and perturbed to deliver varying results, and so to access this flexibility the inputs have to be carefully chosen. The input file consists of 19 lines, where each line must be the value for a specific parameter, as listed in order below:
+`epiSpaces` takes only one argument - the filename of a parameter file. An example of a parameter file is available in this repo, `example_parameter.txt`. This algorithm isn't necessarily designed to identify a global solution, moreover it explores the parameter space of the genotype-phenotype map. To this end genetic algorithms can be tuned and perturbed to deliver varying results, and so to access this flexibility the inputs have to be carefully chosen. The input file consists of 19 lines, where each line must be the value for a specific parameter, as listed in order below:
 
 
 ### Parameters
@@ -62,7 +64,7 @@ This will create an execultable called `epiFitness`.
 
 Once the input file is created, (e.g. `example_parameters.txt`), the following command runs the programme:
 
-    ./epiFitness example_parameters.txt
+    ./epiSpaces example_parameters.txt
 
 ### Output files
 
@@ -84,9 +86,9 @@ My name is [Gibran Hemani][0], this work was produced as part of my PhD thesis a
 
 ## License
 
-EpiFitness is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+epiSpaces is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-EpiFitness is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+epiSpaces is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see [http://www.gnu.org/licenses/][4].
 
