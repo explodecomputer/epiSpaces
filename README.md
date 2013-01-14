@@ -3,7 +3,7 @@ epiFitness
 
 A genetic algorithm to find 2-locus epistatic patterns that maximise the maintenence of additive genetic variance under selection. This programme was used for analysis in the following article:
 
-Hemani G, Knott S, Haley C. "An evolutionary perspective on epistasis and the missing heritability". 2013. PLoS Genetics (in press).
+*Hemani G, Knott S, Haley C.* **An evolutionary perspective on epistasis and the missing heritability**. *PLoS Genetics (in press)*.
 
 For detailed information on the background and interpretation of `epiFitness` programme please refer to this article.
 
@@ -60,6 +60,9 @@ This will create an execultable called `epiFitness`.
 - `INITIAL` Initial pattern (e.g. **-1 0 1 0 0 0 1 0 -1** would be an example of additive x additive epistasis)
 - `OVERRIDE` Overriding pattern for any sampling problems (e.g. **-1 -1 -1 -1 -1 -1 -1 -1 -1**)
 
+Once the input file is created, (e.g. `example_parameters.txt`), the following command runs the programme:
+
+    ./epiFitness example_parameters.txt
 
 ### Output files
 
