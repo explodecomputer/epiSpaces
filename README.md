@@ -75,5 +75,12 @@ There are two output files, with the examples given they will be named `ga_out` 
 The `ga_outpats` file details the genotype-phenotype map for every model that appears in `ga_out`, along with its total Va. The patterns that maximise for the conditions of the genetic algorithm are at the end of the files.
 
 
+## Acknowledgements
 
+This work was produced by [Gibran Hemani][0] part of my PhD thesis at [The Roslin Institute][1] at the University of Edinburgh under the supervision of [Chris Haley][2] and [Sara Knott][3]
+
+ [0]:http://www.complextraitgenomics.com/the_team/index.php#gibran_hemani
+ [1]:http://www.roslin.ac.uk
+ [2]:http://www.roslin.ed.ac.uk/chris-haley/
+ [3]:http://www.ed.ac.uk/schools-departments/biology/evolutionary-biology/staff-profiles?id=sknott&cw_xml=homepage.php
 
