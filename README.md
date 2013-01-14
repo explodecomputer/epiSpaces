@@ -14,15 +14,13 @@ Epistasis may play an important role in the genetic variation of complex traits,
 A brief description of what the programme does follows:
 
 We are trying to create two locus bi-allelic epistatic patterns that maximise additive variance and survival time under selection.
-- Create UNMOD random patterns of epistasis (aka genotype-phenotype maps, or models) with fitness values with a maximum range of URANGE.
-- For each model create a population of individuals whose fitness is governed by that model, for each of combinations of frequencies in UFREQ1 and UFREQ2. For example, if UFREQ1=5 and UFREQ2=5 then there will be 25 initial populations for each model, and each population will have the mutations at a different starting frequency.
-- We calculate the theoretical allele frequency trajectory for each of the UNFREQS1 x UNFREQS2 populations, and for each model.
-- Additive variance is summed from all the runs of eligable patterns starting from generation USTARTVA.
-- If at least UGTHRESH populations out of all the initial populations survive for at least UMAXG generations then that model is eligable to continue.
-- Each surviving model is mutated a number of different times (defined in UNEXTMODS), by sampling from the values in the UPERT array. The original model is also kept so that fitness cannot regress.
+- Create `UNMOD` random patterns of epistasis (aka genotype-phenotype maps, or models) with fitness values with a maximum range of URANGE.
+- For each model create a population of individuals whose fitness is governed by that model, for each of combinations of frequencies in `UFREQ1` and `UFREQ2`. For example, if `UFREQ1=5` and `UFREQ2=5` then there will be 25 initial populations for each model, and each population will have the mutations at a different starting frequency.
+- We calculate the theoretical allele frequency trajectory for each of the `UNFREQS1` x `UNFREQS2` populations, and for each model.
+- Additive variance is summed from all the runs of eligable patterns starting from generation `USTARTVA`.
+- If at least `UGTHRESH` populations out of all the initial populations survive for at least `UMAXG` generations then that model is eligable to continue.
+- Each surviving model is mutated a number of different times (defined in `UNEXTMODS`), by sampling from the values in the `UPERT` array. The original model is also kept so that fitness cannot regress.
 - If none survive then choose a new random set of models.
-
-
 
 
 ## Installation
@@ -42,25 +40,25 @@ This will create an execultable called `epiFitness`.
 
 ### Parameters
 
-- *UNID* Number of individuals in the population (e.g. `1000`)
-- *UMAXG* Maximum number of generations to simulate each population (e.g. `100`)
-- *UMAXRUNS* Maximum number of generations for the genetic algorithm to run (e.g. `5000`)
-- *UGTHRESH* The number of runs (out of all initial frequencies) that must survive to be allowed to continue (e.g. `20` when there are 25 starting frequencies)
-- *USTARTVA* The generation at which to start summing additive genetic variance (e.g. `20`)
-- *URANGE* Exact range between maximum and minimum genotype class means after scaling (e.g. `6`)
-- *UNFREQ1* Number of different starting frequencies for locus 1 (e.g. `5`)
-- *UNFREQ1[0] UNFREQ1[1] ...* Starting frequencies for locus 1 (e.g. `0.1 0.3 0.5 0.7 0.91)
-- *UNFREQ2* Number of different starting frequencies for locus 2 (e.g. `5`)
-- *UNFREQ2[0] UNFREQ2[1] ...* Starting frequencies for locus 2 (e.g. `0.1 0.3 0.5 0.7 0.91)
-- *UNMOD* Number of random genotype-phenotype maps to generate (e.g. `40`)
-- *UNBESTMODS* Number of models to take forward to the next generation (e.g. `4`)
-- *UNEXTMODS[0] UNEXTMODS[1] ... UNEXTMODS[UNBESTMODS-1]* How many random variations of each model carried forward to make, and how many new models to make (e.g. `5 5 5 5 20` if 5 mutations of each of the 4 best models to be made, plus 20 completely new mutations)
-- *UNPERT* Number of perturbation values to be used for mutating models (e.g. `10`)
-- *UPERT[0] UPERT[1] ...* Perturbation values from which to sample mutations to the models (e.g. `-0.04 -0.02 -0.01 0 0 0 0 0.01 0.02 0.04`)
-- *USEED* Seed for random number generator (e.g. `1234`)
-- *UFILENAME* Rootname for output files (e.g. `ga_out`)
-- *INITIAL* Initial pattern (e.g. `-1 0 1 0 0 0 1 0 -1` would be an example of additive x additive epistasis)
-- *OVERRIDE* Overriding pattern for any sampling problems (e.g. `-1 -1 -1 -1 -1 -1 -1 -1 -1`)
+- `UNID` Number of individuals in the population (e.g. **1000**)
+- `UMAXG` Maximum number of generations to simulate each population (e.g. **100**)
+- `UMAXRUNS` Maximum number of generations for the genetic algorithm to run (e.g. **5000**)
+- `UGTHRESH` The number of runs (out of all initial frequencies) that must survive to be allowed to continue (e.g. **20** when there are 25 starting frequencies)
+- `USTARTVA` The generation at which to start summing additive genetic variance (e.g. **20**)
+- `URANGE` Exact range between maximum and minimum genotype class means after scaling (e.g. **6**)
+- `UNFREQ1` Number of different starting frequencies for locus 1 (e.g. **5**)
+- `UNFREQ1[0] UNFREQ1[1] ...` Starting frequencies for locus 1 (e.g. **0.1 0.3 0.5 0.7 0.91**)
+- `UNFREQ2` Number of different starting frequencies for locus 2 (e.g. **5**)
+- `UNFREQ2[0] UNFREQ2[1] ...` Starting frequencies for locus 2 (e.g. **0.1 0.3 0.5 0.7 0.91**)
+- `UNMOD` Number of random genotype-phenotype maps to generate (e.g. **40**)
+- `UNBESTMODS` Number of models to take forward to the next generation (e.g. **4**)
+- `UNEXTMODS[0] UNEXTMODS[1] ... UNEXTMODS[UNBESTMODS-1]` How many random variations of each model carried forward to make, and how many new models to make (e.g. **5 5 5 5 20** if 5 mutations of each of the 4 best models to be made, plus 20 completely new mutations)
+- `UNPERT` Number of perturbation values to be used for mutating models (e.g. **10**)
+- `UPERT[0] UPERT[1] ...` Perturbation values from which to sample mutations to the models (e.g. **-0.04 -0.02 -0.01 0 0 0 0 0.01 0.02 0.04**)
+- `USEED` Seed for random number generator (e.g. **1234**)
+- `UFILENAME` Rootname for output files (e.g. **ga_out**)
+- `INITIAL` Initial pattern (e.g. **-1 0 1 0 0 0 1 0 -1** would be an example of additive x additive epistasis)
+- `OVERRIDE` Overriding pattern for any sampling problems (e.g. **-1 -1 -1 -1 -1 -1 -1 -1 -1**)
 
 
 ### Output files
