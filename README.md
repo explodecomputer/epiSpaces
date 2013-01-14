@@ -82,8 +82,17 @@ The `ga_outpats` file details the genotype-phenotype map for every model that ap
 
 This work was produced by [Gibran Hemani][0] part of my PhD thesis at [The Roslin Institute][1] at the University of Edinburgh under the supervision of [Chris Haley][2] and [Sara Knott][3]
 
+## License
+
+EpiFitness is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+EpiFitness is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see [http://www.gnu.org/licenses/][4].
+
  [0]:http://www.complextraitgenomics.com/the_team/index.php#gibran_hemani
  [1]:http://www.roslin.ac.uk
  [2]:http://www.roslin.ed.ac.uk/chris-haley/
  [3]:http://www.ed.ac.uk/schools-departments/biology/evolutionary-biology/staff-profiles?id=sknott&cw_xml=homepage.php
+ [4]:http://www.gnu.org/licenses/
 
