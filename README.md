@@ -17,8 +17,8 @@ We are trying to create two locus bi-allelic epistatic patterns that maximise ad
 - Create `UNMOD` random patterns of epistasis (aka genotype-phenotype maps, or models) with fitness values with a maximum range of URANGE.
 - For each model create a population of individuals whose fitness is governed by that model, for each of combinations of frequencies in `UFREQ1` and `UFREQ2`. For example, if `UFREQ1=5` and `UFREQ2=5` then there will be 25 initial populations for each model, and each population will have the mutations at a different starting frequency.
 - We calculate the theoretical allele frequency trajectory for each of the `UNFREQS1` x `UNFREQS2` populations, and for each model.
-- Additive variance is summed from all the runs of eligable patterns starting from generation `USTARTVA`.
-- If at least `UGTHRESH` populations out of all the initial populations survive for at least `UMAXG` generations then that model is eligable to continue.
+- Additive variance is summed from all the runs of eligible patterns starting from generation `USTARTVA`.
+- If at least `UGTHRESH` populations out of all the initial populations survive for at least `UMAXG` generations then that model is eligible to continue.
 - Each surviving model is mutated a number of different times (defined in `UNEXTMODS`), by sampling from the values in the `UPERT` array. The original model is also kept so that fitness cannot regress.
 - If none survive then choose a new random set of models.
 
@@ -80,7 +80,7 @@ The `ga_outpats` file details the genotype-phenotype map for every model that ap
 
 ## Acknowledgements
 
-This work was produced by [Gibran Hemani][0] part of my PhD thesis at [The Roslin Institute][1] at the University of Edinburgh under the supervision of [Chris Haley][2] and [Sara Knott][3]
+My name is [Gibran Hemani][0], this work was produced as part of my PhD thesis at [The Roslin Institute][1] at the University of Edinburgh under the supervision of [Chris Haley][2] and [Sara Knott][3]
 
 ## License
 
