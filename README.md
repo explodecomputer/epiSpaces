@@ -5,7 +5,7 @@ A genetic algorithm to find 2-locus epistatic parameter space to maximise the ma
 
 *Hemani G, Knott S, Haley C.* **An evolutionary perspective on epistasis and the missing heritability**. *PLoS Genetics (in press)*.
 
-For detailed information on the background and interpretation of `epiSpaces` programme please refer to this article.
+For detailed information on the background and interpretation of `epiSpaces` please refer to this article.
 
 (The name is sort of a pun-cum-portmanteau of *epistasis* and *parameter space*...)
 
