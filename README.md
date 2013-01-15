@@ -32,7 +32,7 @@ Requires GCC. To install (on Mac or Linux) simply clone the repo and run
 
     make
 
-This will create an execultable called `epiSpaces`.
+This will create an executable called `epiSpaces`.
 
 
 ## How to run
