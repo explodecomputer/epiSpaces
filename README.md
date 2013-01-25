@@ -7,7 +7,7 @@ A genetic algorithm to find 2-locus epistatic parameter space to maximise the ma
 
 For detailed information on the background and interpretation of `epiSpaces` please refer to this article.
 
-(The name is sort of a pun-cum-portmanteau of *epistasis* and *parameter space*...)
+(The name is sort of a pun/portmanteau of *epistasis* and *parameter space*...)
 
 ## Summary
 
